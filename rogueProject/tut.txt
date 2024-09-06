@@ -1,0 +1,11 @@
+Github Repo: https://github.com/rohan37kumar/rogueProject/
+
+RogueSharp C# Tutorial:
+https://roguesharp.wordpress.com/2016/02/20/roguesharp-v3-tutorial-introduction-and-goals/
+
+Used Libraries: (nuget.org)
+-RLNet
+-RogueSharp
+-Microsoft.Win32.SystemEvents
+-System.Drawing.Common
+
