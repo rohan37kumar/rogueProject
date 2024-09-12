@@ -28,7 +28,7 @@ public class MessageLog
 
     public void Draw(RLConsole console)
     {
-        console.Clear();
+        //console.Clear();
         //simple Queue to array and print each line
         string[] lines = _lines.ToArray();
         for (int i = 0; i < lines.Length; i++)

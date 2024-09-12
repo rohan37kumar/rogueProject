@@ -16,17 +16,27 @@ public class DungeonMap : Map
         _monsters = new List<Monster>();
     }
 
-    public void Draw(RLConsole mapConsole)
+    public void Draw(RLConsole mapConsole, RLConsole statConsole)
     {
-        mapConsole.Clear();
+        //mapConsole.Clear();
         foreach (Cell cell in GetAllCells())
         {
             SetConsoleSymbolForCell(mapConsole, cell);
         }
+
+        int i = 0; //index which will help in monnster stat counting...
+
         foreach(Monster monster in _monsters)
         {
             monster.Draw(mapConsole, this);
+            //if the monster is in fov then DrawStats()
+            if(IsInFov(monster.X, monster.Y))
+            {
+                monster.DrawStats(statConsole, i);
+                ++i;
+            }
         }
+
     }
 
     private void SetConsoleSymbolForCell(RLConsole console, Cell cell)
@@ -121,6 +131,17 @@ public class DungeonMap : Map
         _monsters.Add(monster);
         SetIsWalkable(monster.X, monster.Y, false); //false where monster is placed...
     }
+
+    public void RemoveMonster(Monster monster)
+    {
+        _monsters.Remove(monster);
+        SetIsWalkable(monster.X, monster.Y, true);
+    }
+    public Monster GetMonsterAt(int x, int y)
+    {
+        //find the firsl monster which is found at these coords...
+        return _monsters.FirstOrDefault(m => m.X == x && m.Y == y);
+    } 
 
     public Point GetRandomWalkableLocationInRoom(Rectangle room)
     {

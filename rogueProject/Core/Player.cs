@@ -13,7 +13,7 @@ namespace rogueProject
             Y = 10;
             //we can add more properties to make our player special
             Attack = 2;
-            AttackChance = 50;
+            AttackChance = 70;
             Defense = 2;
             DefenseChance = 40;
             Gold = 0;

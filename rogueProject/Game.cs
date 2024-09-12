@@ -135,8 +135,13 @@ namespace rogueProject
         {
             if (_renderReq) //only redraw the map if something happened else no need for code optimisation...
             {
+                //clear old consoles before drawing
+                _map.Clear();
+                _stat.Clear();
+                _msg.Clear();
+
                 //drawing what we setup
-                DungeonMap.Draw(_map);
+                DungeonMap.Draw(_map, _stat);
                 Player.Draw(_map, DungeonMap);
                 Player.DrawStats(_stat);
                 MessageLog.Draw(_msg);
