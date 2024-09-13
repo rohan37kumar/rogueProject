@@ -21,4 +21,11 @@ public class Monster : Actor
         statConsole.Print(2, yPos, $": {Name}", Swatch.DbLight);
 
     }
+
+    public int? TurnsAlerted { get; set; } //a nullable int value to check if monster has been alerted
+    public virtual void PerformAction(CommandSystem commandSystem)
+    {
+        var behavior = new StandardMoveAndAttack();
+        behavior.Act(this, commandSystem);
+    }
 }

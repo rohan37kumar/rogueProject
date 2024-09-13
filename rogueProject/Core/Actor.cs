@@ -2,7 +2,7 @@
 using rogueProject;
 using RogueSharp;
 
-public class Actor : IActor, IDrawable
+public class Actor : IActor, IDrawable, IScheduleable
 {
 
     private int _attack;
@@ -165,5 +165,11 @@ public class Actor : IActor, IDrawable
             console.Set(X, Y, Colors.Floor, Colors.FloorBackground, '.');
         }
     }
+
+    public int Time
+    {
+        get { return Speed; }
+    }
+
 }
     

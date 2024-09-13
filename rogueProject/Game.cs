@@ -7,6 +7,7 @@ namespace rogueProject
     {
         private static bool _renderReq = true;
         public static CommandSystem CommandSystem { get; private set; }
+        public static SchedulingSystem SchedulingSystem { get; private set; }
 
         public static IRandom Random { get; private set; }
 
@@ -61,6 +62,7 @@ namespace rogueProject
 
 
             CommandSystem = new CommandSystem();
+            SchedulingSystem = new SchedulingSystem();
             //Player = new Player();
             MapGenerator mapGen = new MapGenerator(_mapWidth, _mapHeight, 20, 13, 7);
             DungeonMap = mapGen.CreateMap();
@@ -99,34 +101,42 @@ namespace rogueProject
             bool didPlayerAct = false; //to check if player did something...
             RLKeyPress keyPress = _rootConsole.Keyboard.GetKeyPress();
 
-            if(keyPress != null)
+            if (CommandSystem.IsPlayerTurn)
             {
-                //moving player based on input direction
-                if (keyPress.Key == RLKey.Up)
+                if (keyPress != null)
                 {
-                    didPlayerAct = CommandSystem.MovePlayer(Direction.Up);
+                    if (keyPress.Key == RLKey.Up)
+                    {
+                        didPlayerAct = CommandSystem.MovePlayer(Direction.Up);
+                    }
+                    else if (keyPress.Key == RLKey.Down)
+                    {
+                        didPlayerAct = CommandSystem.MovePlayer(Direction.Down);
+                    }
+                    else if (keyPress.Key == RLKey.Left)
+                    {
+                        didPlayerAct = CommandSystem.MovePlayer(Direction.Left);
+                    }
+                    else if (keyPress.Key == RLKey.Right)
+                    {
+                        didPlayerAct = CommandSystem.MovePlayer(Direction.Right);
+                    }
+                    else if (keyPress.Key == RLKey.Escape)
+                    {
+                        _rootConsole.Close();
+                    }
                 }
-                else if (keyPress.Key == RLKey.Down)
+
+                if (didPlayerAct)
                 {
-                    didPlayerAct = CommandSystem.MovePlayer(Direction.Down);
-                }
-                else if (keyPress.Key == RLKey.Left)
-                {
-                    didPlayerAct = CommandSystem.MovePlayer(Direction.Left);
-                }
-                else if (keyPress.Key == RLKey.Right)
-                {
-                    didPlayerAct = CommandSystem.MovePlayer(Direction.Right);
-                }
-                else if (keyPress.Key == RLKey.Escape)
-                {
-                    _rootConsole.Close();
+                    //MessageLog.Add($"Step #{++_steps}"); //display no of steps on console...
+                    _renderReq = true;
+                    CommandSystem.EndPlayerTurn();
                 }
             }
-
-            if(didPlayerAct)
+            else
             {
-                //MessageLog.Add($"Step #{++_steps}"); //display no of steps on console...
+                CommandSystem.ActivateMonsters();
                 _renderReq = true;
             }
 

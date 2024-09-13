@@ -19,7 +19,7 @@ namespace rogueProject
             Gold = 0;
             Health = 100;
             MaxHealth = 100;
-            Speed = 10;
+            Speed = 8;
         }
 
         public void DrawStats(RLConsole statConsole)

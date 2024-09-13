@@ -1,4 +1,5 @@
 ﻿using rogueProject;
+using RogueSharp;
 using RogueSharp.DiceNotation;
 using System.Text;
 
@@ -153,6 +154,46 @@ public class CommandSystem
             Game.DungeonMap.RemoveMonster((Monster)defender);
 
             Game.MessageLog.Add($"  {defender.Name} died and dropped {defender.Gold} gold");
+        }
+    }
+
+    public bool IsPlayerTurn { get; set; }
+
+    public void EndPlayerTurn()
+    {
+        IsPlayerTurn = false;
+    }
+
+    public void ActivateMonsters()
+    {
+        IScheduleable scheduleable = Game.SchedulingSystem.Get();
+        if (scheduleable is Player)
+        {
+            IsPlayerTurn = true;
+            Game.SchedulingSystem.Add(Game.Player);
+        }
+        else
+        {
+            Monster monster = scheduleable as Monster;
+
+            if (monster != null)
+            {
+                monster.PerformAction(this);
+                Game.SchedulingSystem.Add(monster);
+            }
+
+            ActivateMonsters();
+        }
+    }
+
+    public void MoveMonster(Monster monster, Cell cell)
+    {
+        if (!Game.DungeonMap.SetActorPosition(monster, cell.X, cell.Y))
+        {
+            if (Game.Player.X == cell.X && Game.Player.Y == cell.Y)
+            {
+                Attack(monster, Game.Player);
+            }
         }
     }
 

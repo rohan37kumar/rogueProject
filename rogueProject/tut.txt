@@ -9,3 +9,7 @@ Used Libraries: (nuget.org)
 -Microsoft.Win32.SystemEvents
 -System.Drawing.Common
 (search & install)
+
+
+//another bug fix Step.First is for Rogue sharp v03
+//for v04 use StepForward()

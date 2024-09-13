@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "D:\\game_dev\\c#PROJ\\rogueProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E58D4B42-E7DE-4854-AF6F-A782D1B6A2EE}|rogueProject\\rogueProject.csproj|d:\\game_dev\\c#proj\\rogueproject\\rogueproject\\systems\\schedulingsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E58D4B42-E7DE-4854-AF6F-A782D1B6A2EE}|rogueProject\\rogueProject.csproj|solutionrelative:rogueproject\\systems\\schedulingsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E58D4B42-E7DE-4854-AF6F-A782D1B6A2EE}|rogueProject\\rogueProject.csproj|d:\\game_dev\\c#proj\\rogueproject\\rogueproject\\core\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E58D4B42-E7DE-4854-AF6F-A782D1B6A2EE}|rogueProject\\rogueProject.csproj|solutionrelative:rogueproject\\core\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E58D4B42-E7DE-4854-AF6F-A782D1B6A2EE}|rogueProject\\rogueProject.csproj|d:\\game_dev\\c#proj\\rogueproject\\rogueproject\\behaviours\\standardmoveandattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E58D4B42-E7DE-4854-AF6F-A782D1B6A2EE}|rogueProject\\rogueProject.csproj|solutionrelative:rogueproject\\behaviours\\standardmoveandattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E58D4B42-E7DE-4854-AF6F-A782D1B6A2EE}|rogueProject\\rogueProject.csproj|d:\\game_dev\\c#proj\\rogueproject\\rogueproject\\tut.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{E58D4B42-E7DE-4854-AF6F-A782D1B6A2EE}|rogueProject\\rogueProject.csproj|solutionrelative:rogueproject\\tut.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E58D4B42-E7DE-4854-AF6F-A782D1B6A2EE}|rogueProject\\rogueProject.csproj|d:\\game_dev\\c#proj\\rogueproject\\rogueproject\\systems\\schedulingsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E58D4B42-E7DE-4854-AF6F-A782D1B6A2EE}|rogueProject\\rogueProject.csproj|solutionrelative:rogueproject\\systems\\schedulingsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E58D4B42-E7DE-4854-AF6F-A782D1B6A2EE}|rogueProject\\rogueProject.csproj|d:\\game_dev\\c#proj\\rogueproject\\rogueproject\\systems\\commandsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E58D4B42-E7DE-4854-AF6F-A782D1B6A2EE}|rogueProject\\rogueProject.csproj|d:\\game_dev\\c#proj\\rogueproject\\rogueproject\\core\\dungeonmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E58D4B42-E7DE-4854-AF6F-A782D1B6A2EE}|rogueProject\\rogueProject.csproj|solutionrelative:rogueproject\\core\\dungeonmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E58D4B42-E7DE-4854-AF6F-A782D1B6A2EE}|rogueProject\\rogueProject.csproj|d:\\game_dev\\c#proj\\rogueproject\\rogueproject\\systems\\mapgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E58D4B42-E7DE-4854-AF6F-A782D1B6A2EE}|rogueProject\\rogueProject.csproj|solutionrelative:rogueproject\\systems\\mapgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,80 +38,98 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SchedulingSystem.cs",
-              "DocumentMoniker": "D:\\game_dev\\c#PROJ\\rogueProject\\rogueProject\\Systems\\SchedulingSystem.cs",
-              "RelativeDocumentMoniker": "rogueProject\\Systems\\SchedulingSystem.cs",
-              "ToolTip": "D:\\game_dev\\c#PROJ\\rogueProject\\rogueProject\\Systems\\SchedulingSystem.cs",
-              "RelativeToolTip": "rogueProject\\Systems\\SchedulingSystem.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAwwDYAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-12T03:44:34.144Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CommandSystem.cs",
-              "DocumentMoniker": "D:\\game_dev\\c#PROJ\\rogueProject\\rogueProject\\Systems\\CommandSystem.cs",
-              "RelativeDocumentMoniker": "rogueProject\\Systems\\CommandSystem.cs",
-              "ToolTip": "D:\\game_dev\\c#PROJ\\rogueProject\\rogueProject\\Systems\\CommandSystem.cs",
-              "RelativeToolTip": "rogueProject\\Systems\\CommandSystem.cs",
-              "ViewState": "AQIAAHoAAAAAAAAAAAAAwHYAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-11T15:51:23.206Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MapGenerator.cs",
-              "DocumentMoniker": "D:\\game_dev\\c#PROJ\\rogueProject\\rogueProject\\Systems\\MapGenerator.cs",
-              "RelativeDocumentMoniker": "rogueProject\\Systems\\MapGenerator.cs",
-              "ToolTip": "D:\\game_dev\\c#PROJ\\rogueProject\\rogueProject\\Systems\\MapGenerator.cs",
-              "RelativeToolTip": "rogueProject\\Systems\\MapGenerator.cs",
-              "ViewState": "AQIAAC4AAAAAAAAAAAAqwEwAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T04:21:56.47Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Player.cs",
-              "DocumentMoniker": "D:\\game_dev\\c#PROJ\\rogueProject\\rogueProject\\Core\\Player.cs",
-              "RelativeDocumentMoniker": "rogueProject\\Core\\Player.cs",
-              "ToolTip": "D:\\game_dev\\c#PROJ\\rogueProject\\rogueProject\\Core\\Player.cs",
-              "RelativeToolTip": "rogueProject\\Core\\Player.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-01T16:16:45.246Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "DungeonMap.cs",
               "DocumentMoniker": "D:\\game_dev\\c#PROJ\\rogueProject\\rogueProject\\Core\\DungeonMap.cs",
               "RelativeDocumentMoniker": "rogueProject\\Core\\DungeonMap.cs",
               "ToolTip": "D:\\game_dev\\c#PROJ\\rogueProject\\rogueProject\\Core\\DungeonMap.cs",
               "RelativeToolTip": "rogueProject\\Core\\DungeonMap.cs",
-              "ViewState": "AQIAAHgAAAAAAAAAAAAmwI8AAAAGAAAA",
+              "ViewState": "AQIAAHYAAAAAAAAAAAAmwIMAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-01T08:37:51.696Z"
+              "WhenOpened": "2024-09-13T20:25:35.986Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "SchedulingSystem.cs",
+              "DocumentMoniker": "D:\\game_dev\\c#PROJ\\rogueProject\\rogueProject\\Systems\\SchedulingSystem.cs",
+              "RelativeDocumentMoniker": "rogueProject\\Systems\\SchedulingSystem.cs",
+              "ToolTip": "D:\\game_dev\\c#PROJ\\rogueProject\\rogueProject\\Systems\\SchedulingSystem.cs",
+              "RelativeToolTip": "rogueProject\\Systems\\SchedulingSystem.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T19:36:03.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CommandSystem.cs",
+              "DocumentMoniker": "D:\\game_dev\\c#PROJ\\rogueProject\\rogueProject\\Systems\\CommandSystem.cs",
+              "RelativeDocumentMoniker": "rogueProject\\Systems\\CommandSystem.cs",
+              "ToolTip": "D:\\game_dev\\c#PROJ\\rogueProject\\rogueProject\\Systems\\CommandSystem.cs",
+              "RelativeToolTip": "rogueProject\\Systems\\CommandSystem.cs",
+              "ViewState": "AQIAAJ8AAAAAAAAAAAAmwLwAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-11T15:51:23.206Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StandardMoveAndAttack.cs",
+              "DocumentMoniker": "D:\\game_dev\\c#PROJ\\rogueProject\\rogueProject\\Behaviours\\StandardMoveAndAttack.cs",
+              "RelativeDocumentMoniker": "rogueProject\\Behaviours\\StandardMoveAndAttack.cs",
+              "ToolTip": "D:\\game_dev\\c#PROJ\\rogueProject\\rogueProject\\Behaviours\\StandardMoveAndAttack.cs",
+              "RelativeToolTip": "rogueProject\\Behaviours\\StandardMoveAndAttack.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwDYAAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T17:08:37.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Player.cs",
+              "DocumentMoniker": "D:\\game_dev\\c#PROJ\\rogueProject\\rogueProject\\Core\\Player.cs",
+              "RelativeDocumentMoniker": "rogueProject\\Core\\Player.cs",
+              "ToolTip": "D:\\game_dev\\c#PROJ\\rogueProject\\rogueProject\\Core\\Player.cs",
+              "RelativeToolTip": "rogueProject\\Core\\Player.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-01T16:16:45.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Game.cs",
               "DocumentMoniker": "D:\\game_dev\\c#PROJ\\rogueProject\\rogueProject\\Game.cs",
               "RelativeDocumentMoniker": "rogueProject\\Game.cs",
               "ToolTip": "D:\\game_dev\\c#PROJ\\rogueProject\\rogueProject\\Game.cs",
               "RelativeToolTip": "rogueProject\\Game.cs",
-              "ViewState": "AQIAAHQAAAAAAAAAAAAuwIwAAAAdAAAA",
+              "ViewState": "AQIAAF4AAAAAAAAAAAAqwIMAAABeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-31T03:25:13.257Z"
+              "WhenOpened": "2024-08-31T03:25:13.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "tut.txt",
+              "DocumentMoniker": "D:\\game_dev\\c#PROJ\\rogueProject\\rogueProject\\tut.txt",
+              "RelativeDocumentMoniker": "rogueProject\\tut.txt",
+              "ToolTip": "D:\\game_dev\\c#PROJ\\rogueProject\\rogueProject\\tut.txt",
+              "RelativeToolTip": "rogueProject\\tut.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-09-13T21:09:12.553Z",
+              "EditorCaption": ""
             }
           ]
         }

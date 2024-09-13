@@ -1,6 +1,7 @@
 ﻿using RLNET;
 using rogueProject;
 using RogueSharp;
+using System.Numerics;
 
 public class DungeonMap : Map
 {
@@ -123,6 +124,7 @@ public class DungeonMap : Map
     {
         Game.Player = player;
         SetIsWalkable(player.X, player.Y, false);
+        Game.SchedulingSystem.Add(player);
         UpdatePlayerFieldOfView();
     }
 
@@ -130,12 +132,14 @@ public class DungeonMap : Map
     {
         _monsters.Add(monster);
         SetIsWalkable(monster.X, monster.Y, false); //false where monster is placed...
+        Game.SchedulingSystem.Add(monster);
     }
 
     public void RemoveMonster(Monster monster)
     {
         _monsters.Remove(monster);
         SetIsWalkable(monster.X, monster.Y, true);
+        Game.SchedulingSystem.Remove(monster);
     }
     public Monster GetMonsterAt(int x, int y)
     {
